@@ -44,7 +44,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-enforcer-plugin</artifactId>
-            <version>YOUR_ENFORCER_PLUGIN_VERSION</version>
+            <version>1.0-SNAPSHOT</version>
             <executions>
                 <execution>
                     <goals>
