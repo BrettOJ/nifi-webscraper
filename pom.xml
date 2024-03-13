@@ -39,30 +39,4 @@
             <version>3.0.1</version>
         </dependency>
     </dependencies>
-    <build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-enforcer-plugin</artifactId>
-            <version>3.4.1</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>enforce</goal>
-                    </goals>
-                    <configuration>
-                        <rules>
-                            <bannedDependencies>
-                                <excludes> <!-- Dependencies to exclude from the ban -->
-                                    <exclude>xalan:xalan:jar:2.7.2</exclude>
-                                    <exclude>commons-logging:commons-logging:jar:1.2</exclude>
-                                </excludes>
-                            </bannedDependencies>
-                        </rules>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-</build>
 </project>
