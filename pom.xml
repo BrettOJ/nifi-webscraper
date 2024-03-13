@@ -32,4 +32,12 @@
         <module>nifi-webscraper-nar</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-server</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+    </dependencies>
+
 </project>
