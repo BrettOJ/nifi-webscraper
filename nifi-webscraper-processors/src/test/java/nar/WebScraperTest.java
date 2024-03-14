@@ -44,7 +44,7 @@ public class WebScraperTest {
     @BeforeAll
     public void init() {
         testRunner = TestRunners.newTestRunner(WebScraper.class);
-        logger.info("Before all tests");
+        
     }
 
     @Test
@@ -64,7 +64,6 @@ public class WebScraperTest {
 
         result.assertAttributeEquals("webscraper.data", EXPECTED_DATA);
         result.assertAttributeEquals("webscraper.url", URL_TO_TEST);
-        logger.info("Tests");
-    }
+        }
     }
 }
