@@ -19,7 +19,7 @@ package webscrape.konjur.nifi.processors.webscraper;
 import org.apache.nifi.util.MockFlowFile;
 import org.apache.nifi.util.TestRunner;
 import org.apache.nifi.util.TestRunners;
-import org.junit.jupiter.api.Before;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -35,7 +35,7 @@ public class WebScraperTest {
     private final String CHROME_DRIVER_FILEPATH = "/home/dvas0004/Downloads/chromedriver";
     private final String EXPECTED_DATA = "KONJUR BLOG";
 
-    @Before
+    @BeforeAll
     public void init() {
         testRunner = TestRunners.newTestRunner(WebScraper.class);
     }
