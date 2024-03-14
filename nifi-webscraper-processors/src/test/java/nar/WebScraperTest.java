@@ -35,6 +35,7 @@ public class WebScraperTest {
     private final String CHROME_DRIVER_FILEPATH = "/home/dvas0004/Downloads/chromedriver";
     private final String EXPECTED_DATA = "KONJUR BLOG";
 
+    @TestInstance(Lifecycle.PER_CLASS)
     
     @BeforeAll
     public void init() {
