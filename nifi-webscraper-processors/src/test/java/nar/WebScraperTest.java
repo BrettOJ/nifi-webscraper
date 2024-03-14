@@ -60,4 +60,3 @@ public class WebScraperTest {
         result.assertAttributeEquals("webscraper.url", URL_TO_TEST);
     }
 }
-}
