@@ -27,7 +27,7 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 import java.util.List;
 import java.util.logging.Logger;
 
-
+@TestInstance(Lifecycle.PER_CLASS) 
 public class WebScraperTest {
 
     private TestRunner testRunner;
@@ -37,10 +37,7 @@ public class WebScraperTest {
     private final String CSS_SELECTOR = "#masthead > div.header-wrapper.clear > div.site-branding > h1 > a";
     private final String CHROME_DRIVER_FILEPATH = "/home/dvas0004/Downloads/chromedriver";
     private final String EXPECTED_DATA = "KONJUR BLOG";
-
-    @TestInstance(Lifecycle.PER_CLASS) {
-  
-    
+       
     @BeforeAll
     public void init() {
         testRunner = TestRunners.newTestRunner(WebScraper.class);
@@ -66,4 +63,3 @@ public class WebScraperTest {
         result.assertAttributeEquals("webscraper.url", URL_TO_TEST);
         }
     }
-}
