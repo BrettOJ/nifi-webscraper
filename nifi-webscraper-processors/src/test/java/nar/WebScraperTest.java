@@ -37,7 +37,7 @@ public class WebScraperTest {
 
     
     @BeforeAll
-    static void init() {
+    public void init() {
         testRunner = TestRunners.newTestRunner(WebScraper.class);
     }
 
