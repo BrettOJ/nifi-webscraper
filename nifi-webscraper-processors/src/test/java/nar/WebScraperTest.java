@@ -24,6 +24,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 
 public class WebScraperTest {
@@ -39,6 +40,7 @@ public class WebScraperTest {
     interface TestLifecycleLogger {
 
     static final Logger logger = Logger.getLogger(TestLifecycleLogger.class.getName());
+    
     @BeforeAll
     public void init() {
         testRunner = TestRunners.newTestRunner(WebScraper.class);
