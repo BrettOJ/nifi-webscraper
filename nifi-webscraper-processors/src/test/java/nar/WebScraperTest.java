@@ -19,8 +19,8 @@ package webscrape.konjur.nifi.processors.webscraper;
 import org.apache.nifi.util.MockFlowFile;
 import org.apache.nifi.util.TestRunner;
 import org.apache.nifi.util.TestRunners;
-import org.junit.jupiter.Before;
-import org.junit.jupiter.Test;
+import org.junit.jupiter.api.Before;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
