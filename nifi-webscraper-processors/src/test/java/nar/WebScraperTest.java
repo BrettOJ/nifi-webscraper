@@ -27,6 +27,7 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 import java.util.List;
 import java.util.logging.Logger;
 
+
 public class WebScraperTest {
 
     private TestRunner testRunner;
@@ -37,20 +38,17 @@ public class WebScraperTest {
     private final String CHROME_DRIVER_FILEPATH = "/home/dvas0004/Downloads/chromedriver";
     private final String EXPECTED_DATA = "KONJUR BLOG";
 
-    @TestInstance(Lifecycle.PER_CLASS)
-    interface TestLifecycleLogger {
-
-    static final Logger logger = Logger.getLogger(TestLifecycleLogger.class.getName());
-
+    @TestInstance(Lifecycle.PER_CLASS) {
+  
     
     @BeforeAll
-    default void init() {
+    public void init() {
         testRunner = TestRunners.newTestRunner(WebScraper.class);
         logger.info("Before all tests");
     }
 
     @Test
-    default void testProcessor() {
+    public void testProcessor() {
         // Add properites
         testRunner.setProperty(WebScraper.CHROME_DRIVER_PROPERTY, CHROME_DRIVER_FILEPATH);
         testRunner.setProperty(WebScraper.URL_PROPERTY, URL_TO_TEST);
