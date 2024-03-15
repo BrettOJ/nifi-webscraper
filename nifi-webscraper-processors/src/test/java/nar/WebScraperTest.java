@@ -34,9 +34,9 @@ public class WebScraperTest {
 
     // IMPORTANT : make sure these variables are set correctly for your system
     private final String URL_TO_TEST = "http://blog.konjur.cloud";
-    private final String CSS_SELECTOR = "#masthead > div.header-wrapper.clear > div.site-branding > h1 > a";
-    private final String CHROME_DRIVER_FILEPATH = "/home/dvas0004/Downloads/chromedriver";
-    private final String EXPECTED_DATA = "KONJUR BLOG";
+    private final String CSS_SELECTOR = "body > app-root > main > div > div.left-side > h1";
+    private final String CHROME_DRIVER_FILEPATH = "/home/brettoj/Downloads/chromedriver";
+    private final String EXPECTED_DATA = "Hello, konjur-blog";
        
     @BeforeAll
     public void init() {
